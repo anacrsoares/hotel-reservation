@@ -1,0 +1,15 @@
+:root {
+  --primary-color: #8c7961;
+  --secondary-color: #a69785;
+  --light-color: #f0f0f0;
+  --accent-color: #fc5f04;
+  --hover-acent-color: #be4600;
+  --btn-primary-color: #bed95b;
+  --btn-secondary-color: #27ae60;
+  --secondary-opacity-color: #acbfcdbb;
+  --light-gray-color: #c0b9b1;
+  --dark-gray-color: #636363;
+  --white-color: #fffee6;
+  --global-body-color: rgb(249, 255, 194);
+  --btn-remove-card: rgb(247, 31, 11);
+}

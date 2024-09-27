@@ -1,0 +1,45 @@
+@import url("../../variables.css");
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  background-color: var(--primary-color);
+}
+
+.nav-container {
+  width: 100%;
+  background-color: var(--primary-color);
+  max-width: 1024px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: "Arial", sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  text-decoration: none;
+  color: var(--accent-color);
+}
+
+.logo:hover {
+  color: var(--hover-acent-color);
+}
+
+.nav-button {
+  margin: 20px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: var(--accent-color);
+  background-color: var(--light-color);
+  font-family: "Arial", sans-serif;
+}
+
+.nav-button:hover {
+  cursor: pointer;
+  background-color: var(--secondary-color);
+}

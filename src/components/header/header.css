@@ -1,0 +1,136 @@
+@import url("../../variables.css");
+
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: var(--secondary-color);
+  color: white;
+  position: relative;
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.header-container {
+  max-width: 1024px;
+  width: 100%;
+}
+
+/* Menu expansivo */
+.header-list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1024px;
+  position: absolute;
+  z-index: 2;
+}
+
+/* Navegação */
+.header-nav-links {
+  width: 100%;
+  list-style: none;
+  height: 0;
+  overflow: hidden;
+  background-color: var(--secondary-opacity-color);
+  transition: height 0.5s ease, opacity 0.5s ease;
+}
+
+.header-nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+  padding: 0 5px;
+  width: 100px;
+  height: 30px;
+}
+
+.show-nav {
+  min-height: 0;
+  height: 100px;
+  width: 100%;
+  max-width: 1024px;
+  background-color: var(--secondary-opacity-color);
+  transition: 0.5s ease;
+}
+
+.nav-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 3;
+  width: 40px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+.header-title {
+  width: 900px;
+  font-size: clamp(1rem, 3vw, 2rem);
+  margin: 20px 0;
+}
+
+.container-header-btn {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-btn {
+  align-content: center;
+  height: 5rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  background-color: var(--btn-primary-color);
+  color: white;
+  font-weight: 800;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  margin: 30px;
+  padding: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.header-btn:hover {
+  background-color: var(--btn-secondary-color);
+  transform: scale(1.1);
+}
+
+.header-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1024px;
+  height: 30px;
+  bottom: -15px;
+  position: absolute;
+}
+
+.header-search-input {
+  height: 30px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background-color: var(--light-gray-color);
+  transition: box-shadow 0.3s ease;
+}
+
+.header-search-input:focus {
+  box-shadow: 0 0 5px var(--light-gray-color);
+}

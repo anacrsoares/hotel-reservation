@@ -1,0 +1,82 @@
+.hotels {
+  display: flex;
+  justify-content: center;
+}
+
+.card-hotels {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 50px;
+  width: 100%;
+  max-width: 1024px;
+}
+
+.card-container {
+  position: relative;
+}
+
+.card-hotel {
+  position: relative;
+  text-decoration: none;
+  color: grey;
+}
+
+.exclude-btn-hotel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: auto;
+  border: none;
+  width: 30px;
+  cursor: pointer;
+}
+
+.exclude-btn-hotel:hover {
+  background-color: var(--btn-remove-card);
+}
+
+.card-hotel-image:hover {
+  cursor: default;
+  text-decoration: underline;
+}
+
+.hotel-price:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.stars {
+  cursor: default;
+  color: #ffd43b;
+}
+
+.card-hotel-image {
+  width: 310px;
+  height: 310px;
+  object-fit: cover;
+}
+
+.card-hotel-titles {
+  position: absolute;
+  bottom: 31px;
+  height: 50px;
+  border-bottom: 2px solid rgb(72, 72, 72);
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.508);
+  width: 100%;
+  align-content: center;
+  padding-left: 0.5rem;
+}
+
+.card-hotel-titles h2 {
+  text-align: start;
+  margin-bottom: 0.5rem;
+}
+
+.card-hotel-titles:hover {
+  background-color: var(--hover-acent-color);
+}
+.card-hotel-more {
+  height: 30px;
+}

@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Globals */
+
+body,
+input {
+  color: rgb(63, 63, 63);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.4rem;
+  background-color: var(--global-body-color);
+}
+
+/* Buttons */
+.btn-return {
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: grey;
+  padding: 0.4rem 0.9rem;
+  border: 3px solid yellow;
+  transition: 0.3s ease;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn-return:hover {
+  background: transparent;
+  color: yellow;
+}
